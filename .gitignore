@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Legacy / dev artifacts (superseded by tests/)
+test_read.py
+create_test_data.py
+
+# Private data files (not part of the package)
+*.dbf
+*.ntx
+*.exe
+*.prg
+*.bat
+resultado_teste.txt
+testdata/
+
+CLAUDE.md
+
+# Synthetic test fixtures — safe to commit
+!tests/fixtures/*.dbf
+!tests/fixtures/*.ntx
+
+# gera_dbf has synthetic test data — needed for test_clipper_compat.py
+!gera_dbf/*.dbf
+!gera_dbf/*.ntx

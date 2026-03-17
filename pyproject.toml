@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "pydbfntx"
+version = "0.1.0"
+description = "Pure-Python reader for Clipper/Harbour DBF files with NTX indexes"
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+authors = [{name = "Vailton Renato"}]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/vailtom/pydbfntx"
+Issues   = "https://github.com/vailtom/pydbfntx/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pydbfntx*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
